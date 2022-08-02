@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.footer-menu > *{
+    color:#fff;
+}
+
+
+.black>*{
+    color: #000;
+}
+
+.white>*{
+    color: #fff;
+}
+
+.hero-banner-bg{
+    background-color:#ffe8de;
+}
+
+.hero-banner-container{
+    background-image: url("./images/bg-test-2.png");
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.input-feild{
+    box-shadow: 0px 8px 11px -3px rgba(0,0,0,0.1);
+    background-color: #fff;
+    
+}
+
