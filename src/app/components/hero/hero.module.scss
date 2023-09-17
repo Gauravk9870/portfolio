@@ -23,10 +23,11 @@ $large: 1024px;
 }
 
 .hero {
-  height: 60vh;
+  // height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 4rem 0rem;
 
   @include for-greater-than-smaller() {
     height: calc(70vh - 8rem);
@@ -138,6 +139,7 @@ $large: 1024px;
             text-transform: uppercase;
             font-size: 2.5rem;
             text-align: center;
+            color: #fff;
             @include for-greater-than-smaller() {
               display: none;
             }

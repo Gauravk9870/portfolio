@@ -15,8 +15,13 @@ $large: 1024px;
 }
 
 .navbar {
-  height: 8rem;
+  // height: 8rem;
   border-bottom: 1px solid rgba(245, 245, 245, 0.1);
+  padding: 2rem 1rem;
+
+  @include for-greater-than-medium() {
+    height: 8rem;
+  }
 
   .container {
     position: relative;
@@ -85,9 +90,11 @@ $large: 1024px;
     }
 
     .menu-btn {
-      position: relative;
+      position: fixed;
       width: 25px;
       height: 15px;
+      z-index: 99;
+      right: 1rem;
 
       -webkit-transform: rotate(0deg);
       -moz-transform: rotate(0deg);
@@ -108,7 +115,7 @@ $large: 1024px;
         display: block;
         height: 2px;
         width: 100%;
-        background: #111;
+        background: white;
         -webkit-transform: rotate(0deg);
         -moz-transform: rotate(0deg);
         -o-transform: rotate(0deg);
