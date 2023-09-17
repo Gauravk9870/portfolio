@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './hero.module.scss'
 import Image from 'next/image'
 import Navbar from '../navbar/Navbar';
+import Link from 'next/link';
 
 const Hero = () => {
 
@@ -38,14 +39,14 @@ const Hero = () => {
                             <div className={styles.bottom}>
                                 <div className={styles.actions}>
                                     <button className={styles['download-btn']} >
-                                        <a href="#">
+                                        <Link href={"https://drive.google.com/file/d/1VtgK9ACx5Hx5e1vJrIK-cpu17SfjcXBN/view?usp=drive_link"}>
                                             Download CV
-                                        </a>
+                                        </Link>
                                     </button>
                                     <button className={styles[`contact-me`]} >
-                                        <a href="https://www.linkedin.com/in/gauravk9870/">
+                                        <Link href="https://www.linkedin.com/in/gauravk9870/">
                                             Contact me
-                                        </a>
+                                        </Link>
                                     </button>
                                 </div>
                             </div>

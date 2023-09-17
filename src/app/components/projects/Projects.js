@@ -19,7 +19,7 @@ const Projects = () => {
                 <div className={styles.content}>
                     {
                         featuredProjects.map((project) => (
-                            <div className={styles.project} key={project.id}>
+                            <div className={styles.project} key={project.id} id={project.category}>
                                 <div className={styles.top}>
                                     <div className={styles.left}>
                                         <span className={styles.category} >

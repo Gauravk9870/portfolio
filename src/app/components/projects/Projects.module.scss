@@ -200,6 +200,12 @@ $large: 1024px;
               width: 100%;
               overflow: hidden;
               position: relative;
+              border: 1px solid rgba(245, 245, 245, 0.416);
+              border-radius: 2rem;
+              
+              @include for-greater-than-smaller() {
+                margin-right: -10rem;
+              }
 
               .image {
                 object-fit: contain;

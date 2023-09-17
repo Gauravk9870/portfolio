@@ -3,7 +3,7 @@ export const projects = [
         id: 1,
         name: "Tracknfly - Website",
         techology: ["React.js", "Node.js", "Express", "CSS", "SCSS"],
-        category: "featured",
+        category: "recent",
         desc: [
             "Played a pivotal role in the development of a comprehensive flight booking website.",
             " Leveraged a diverse range of technologies, including React.js, CSS, SCSS, Node.js, Express, and external APIs.",

@@ -11,31 +11,67 @@ const Footer = () => {
             <div className={styles.container}>
                 <div className={styles.top}>
                     <div className={styles.left} >
-                        Gaurav
-                        <span className={styles.dot}>
-                            .
-                        </span>
+                        <Link href="/">
+                            Gaurav
+                            <span className={styles.dot}>
+                                .
+                            </span>
+                        </Link>
                     </div>
                     <div className={styles.middle}>
                         <ul>
-                            <li>Featured </li>
-                            <li>Recent </li>
-                            <li>Miscellaneous </li>
+                            <li>
+                                <Link href="/projects#featured">
+                                    Featured
+                                </Link>
+                            </li>
+                            <li> <Link href="/projects#recent">
+                                Recent
+                            </Link> </li>
+                            <li>
+                                <Link href="/projects#misc-projects">
+                                    Miscellaneous
+                                </Link>
+                            </li>
                         </ul>
                         <ul>
-                            <li>Experience</li>
-                            <li>Education</li>
+                            <li>
+                                <Link href="/#experience">
+                                    Experience
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="/#education">
+                                    Education
+                                </Link>
+                            </li>
                         </ul>
                         <ul>
-                            <li>Skills</li>
-                            <li>Download CV</li>
+                            <li>
+                                <Link href="/#skills">
+                                    Skills
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href={"https://drive.google.com/file/d/1VtgK9ACx5Hx5e1vJrIK-cpu17SfjcXBN/view?usp=drive_link"}>
+                                    Download CV
+                                </Link>
+                            </li>
                         </ul>
                     </div>
 
                     <ul className={styles.right}>
-                        <li>Home</li>
+                        <li>
+
+                            <Link href="/">
+                                Home
+                            </Link> </li>
                         <li>About</li>
-                        <li>Projects</li>
+                        <li>
+                            <Link href="/projects">
+                                Projects
+                            </Link>
+                        </li>
                         <li>Contact</li>
                     </ul>
                 </div>
@@ -55,11 +91,7 @@ const Footer = () => {
                             <AiOutlineInstagram />
                         </a>
                     </li>
-                    <li>
-                        <a href="">
-                            <AiOutlineCodepen />
-                        </a>
-                    </li>
+
                 </ul>
                 <ul className={styles.copyright}>
                     <li>© {new Date().getFullYear().toString()} Gaurav. All rights reserved</li>

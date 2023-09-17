@@ -17,13 +17,14 @@ const Navbar = () => {
         <nav className={styles.navbar}>
             <div className={styles.container}>
                 <div className={styles.logo} >
-                    <span>
-                        Gaurav
-                        <span className={styles.dot}>
-                            .
+                    <Link href="/">
+                        <span>
+                            Gaurav
+                            <span className={styles.dot}>
+                                .
+                            </span>
                         </span>
-                    </span>
-
+                    </Link>
                 </div>
                 <ul className={styles.links}>
                     <li>
@@ -32,8 +33,11 @@ const Navbar = () => {
                             Home
                         </Link> </li>
                     <li>About</li>
-                    <li>Projects</li>
-                    <li>Blog</li>
+                    <li>
+                        <Link href="/projects">
+                            Projects
+                        </Link>
+                    </li>
                     <li>Contact</li>
                 </ul>
                 <ul className={styles.social}>
@@ -43,12 +47,12 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/gauravk9870/">
+                        <a href="https://www.linkedin.com/in/gauravk9870/" target='_blank'>
                             <FaLinkedinIn />
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/gaurav.k__/">
+                        <a href="https://www.instagram.com/gaurav.k__/" target='_blank'>
                             <AiOutlineInstagram />
                         </a>
                     </li>

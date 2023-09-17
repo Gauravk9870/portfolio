@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 const Skills = () => {
     return (
-        <div className={styles.skills}>
+        <div className={styles.skills} id='skills'>
             <div className={styles.container}>
                 <div className={styles['titles']}>
                     <h3>Why Choose me</h3>

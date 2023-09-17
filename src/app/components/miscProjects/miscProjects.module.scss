@@ -73,6 +73,7 @@ $large: 1024px;
         border: 1px solid rgba(245, 245, 245, 0.416);
         padding: 1rem;
         cursor: pointer;
+        border-radius: 1rem;
 
         .image-container {
           width: 100%;
@@ -80,6 +81,7 @@ $large: 1024px;
           overflow: hidden;
           border: 1px solid rgba(245, 245, 245, 0.416);
           transition: all 0.2s ease-in-out;
+          border-radius: 1rem;
 
           &:hover {
             .image {

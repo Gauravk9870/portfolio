@@ -11,7 +11,7 @@ const Experience = () => {
                     <h2>Awesome Journey</h2>
                 </div>
                 <div className={styles.content}>
-                    <div className={styles.current}>
+                    <div className={styles.current} id='experience'>
                         <div className={styles.time}>
                             <h4>Experience</h4>
                             <h2>Web Developer Intern</h2>
@@ -61,7 +61,7 @@ const Experience = () => {
 
                                 <span className={styles.year}>Jan 2023 - Jan 2023</span>
                             </div>
-                            <div className={styles.time}>
+                            <div className={styles.time} id='education'>
                                 <h4>Education</h4>
                                 <h2>bachelors of computer applications </h2>
                                 <h3>St. Andrews Institute of Technology And Management</h3>

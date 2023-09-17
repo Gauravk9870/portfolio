@@ -8,7 +8,7 @@ const MiscProjects = () => {
     const miscProjects = projects.filter((project) => project.category === 'misc')
 
     return (
-        <div className={styles[`misc-projects`]}>
+        <div className={styles[`misc-projects`]} id='misc-projects'>
             <div className={styles.container}>
                 <div className={styles[`titles`]}>
                     <h3>Some others worthy projects</h3>
