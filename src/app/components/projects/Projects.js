@@ -68,14 +68,11 @@ const Projects = () => {
                                 </div>
                                 <div className={styles.bottom}>
                                     <div className={styles.titles}>
-
                                         <h4><span>Crafting for</span> Mobile Excellence</h4>
                                     </div>
                                     {project.mobileImgs.map((img, index) => (
-                                        <div className={styles.mobile} key={index}>
-                                            <div className={styles[`image-container`]}>
-                                                <Image src={img} fill="true" className={styles.image} alt={img} />
-                                            </div>
+                                        <div className={styles[`image-container`]} key={index}>
+                                            <Image src={img} fill="true" className={styles.image} alt={img} />
                                         </div>
                                     ))}
                                 </div>

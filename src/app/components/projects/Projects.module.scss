@@ -240,28 +240,19 @@ $large: 1024px;
             }
           }
 
-          .mobile {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+          .image-container {
+            width: 90%;
             overflow: hidden;
 
-            .image-container {
-              width: 100%;
-              margin-bottom: -0.5rem;
-              overflow: hidden;
-              // border: 1px solid white;
+            > div {
+              position: unset !important;
+            }
 
-              > div {
-                position: unset !important;
-              }
-
-              .image {
-                object-fit: contain;
-                width: 100% !important;
-                position: relative !important;
-                height: unset !important;
-              }
+            .image {
+              object-fit: contain;
+              width: 100% !important;
+              position: relative !important;
+              height: unset !important;
             }
           }
         }
