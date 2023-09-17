@@ -1,0 +1,35 @@
+.WorkTogether {
+  padding: 10rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+
+  h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 4rem;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: #fa571f;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    font-size: 1.5rem;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+}
