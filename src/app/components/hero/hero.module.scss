@@ -14,13 +14,7 @@ $large: 1024px;
   }
 }
 
-.header {
-  // background-image: linear-gradient(
-  //   111.4deg,
-  //   rgba(7, 7, 9, 1) 6.5%,
-  //   rgba(27, 24, 113, 1) 93.2%
-  // );
-}
+
 
 .hero {
   // height: 60vh;
@@ -60,6 +54,8 @@ $large: 1024px;
         }
 
         .image-container {
+          position: relative;
+
           border: 1px solid black;
           width: 20rem;
           height: 20rem;

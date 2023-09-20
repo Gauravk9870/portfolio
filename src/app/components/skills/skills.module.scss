@@ -59,8 +59,10 @@ $large: 1024px;
       gap: 2rem;
 
       li {
+        position: relative;
         .image-container {
           width: 100%;
+          position: relative;
 
           > div {
             position: unset !important;
