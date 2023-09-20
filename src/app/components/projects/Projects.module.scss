@@ -192,7 +192,7 @@ $large: 1024px;
             overflow: hidden;
             @include for-greater-than-medium() {
               display: flex;
-              align-items: center;
+              align-items: flex-start;
               justify-content: center;
             }
 
@@ -202,7 +202,7 @@ $large: 1024px;
               position: relative;
               border: 1px solid rgba(245, 245, 245, 0.416);
               border-radius: 2rem;
-              
+
               @include for-greater-than-smaller() {
                 margin-right: -10rem;
               }

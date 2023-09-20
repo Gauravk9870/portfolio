@@ -34,7 +34,7 @@ $large: 1024px;
     @include for-greater-than-medium {
       padding: 0rem 2rem;
     }
-
+    
     .logo {
       span {
         font-size: 1.5rem;
@@ -90,7 +90,7 @@ $large: 1024px;
     }
 
     .menu-btn {
-      position: fixed;
+      position: absolute;
       width: 25px;
       height: 15px;
       z-index: 99;
@@ -155,6 +155,24 @@ $large: 1024px;
         -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
       }
+    }
+  }
+}
+
+.mobile {
+  transition: height 0.5s ease-in-out;
+  .links {
+    transition: height 0.5s ease-in-out;
+    padding: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(245, 245, 245, 0.1);
+
+    li {
+      color: white;
+      font-size: 1.5rem;
     }
   }
 }
