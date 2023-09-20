@@ -34,7 +34,7 @@ $large: 1024px;
     @include for-greater-than-medium {
       padding: 0rem 2rem;
     }
-    
+
     .logo {
       span {
         font-size: 1.5rem;
@@ -161,6 +161,10 @@ $large: 1024px;
 
 .mobile {
   transition: height 0.5s ease-in-out;
+
+  @include for-greater-than-medium() {
+    display: none;
+  }
   .links {
     transition: height 0.5s ease-in-out;
     padding: 2rem;
