@@ -44,6 +44,24 @@ export const projects = [
     },
     {
         id: 3,
+        name: "Underpin Games",
+        techology: ["React.js", "CSS", "SCSS"],
+        category: "misc",
+        desc: [
+        ],
+        links: [
+            {
+                id: 1,
+                name: "preview",
+                link: "https://www.underpingames.com/"
+            }
+        ],
+        laptopImg: "/misc/underpingames.png",
+        mobileImgs: []
+
+    },
+    {
+        id: 4,
         name: "Watch OTT Party - Website",
         techology: ["React.js", "CSS", "SCSS"],
         category: "misc",
@@ -65,7 +83,7 @@ export const projects = [
 
     },
     {
-        id: 4,
+        id: 5,
         name: "Youtube AdBlocker - Website",
         techology: ["Next.js", "CSS", "SCSS"],
         category: "misc",
@@ -88,7 +106,7 @@ export const projects = [
     },
 
     {
-        id: 5,
+        id: 6,
         name: "Tripling - Booking website",
         techology: ["React.js", "Node.js", "Express", "MongoDb", "SCSS", "CSS"],
         category: "misc",
@@ -109,7 +127,7 @@ export const projects = [
 
     },
     {
-        id: 6,
+        id: 7,
         name: "Banking Website",
         techology: ["React.js", "Firebase", "CSS", "SCSS"],
         category: "misc",
@@ -134,7 +152,7 @@ export const projects = [
 
     },
     {
-        id: 7,
+        id: 8,
         name: "Exercise Guiding Website",
         techology: ["HTML5", "CSS", "JavaScript"],
         category: "misc",
@@ -155,7 +173,7 @@ export const projects = [
 
     },
     {
-        id: 8,
+        id: 9,
         name: "Jabber - Chatting website",
         techology: ["HTML5", "CSS", "JavaScript"],
         category: "misc",
@@ -179,7 +197,7 @@ export const projects = [
         mobileImgs: []
     },
     {
-        id: 9,
+        id: 10,
         name: "Meal Monkey",
         techology: ["NEXTJS", "CSS", "SCSS"],
         category: "misc",
@@ -200,7 +218,7 @@ export const projects = [
         mobileImgs: []
     },
     {
-        id: 10,
+        id: 11,
         name: "FOM",
         techology: ["REACTJS", "CSS", "SCSS"],
         category: "misc",
