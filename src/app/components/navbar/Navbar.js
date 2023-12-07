@@ -6,18 +6,41 @@ import styles from './navbar.module.scss';
 import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai"
 import { FaLinkedinIn } from "react-icons/fa"
 import Link from 'next/link';
+import { motion } from 'framer-motion';
+import useResponsiveAnimation from '@/app/hooks/useResponsiveAnimation';
+
 
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
+
+    const initialVariants = {
+        navbar: {
+            y: '-100%'
+        },
+
+    };
+
+    const endVariants = {
+        navbar: {
+            y: 0
+        }
+
+    }
+
+    const navbarAnimation = useResponsiveAnimation(initialVariants.navbar, endVariants.navbar);
+
     return (
         <>
-
-            <nav className={styles.navbar}>
-                <div className={styles.container}>
-                    <div className={styles.logo} >
+            <motion.nav
+                className={styles.navbar}
+                {...navbarAnimation}
+                
+            >
+                <motion.div className={styles.container}>
+                    <motion.div className={styles.logo}>
                         <Link href="/">
                             <span>
                                 Gaurav
@@ -26,8 +49,8 @@ const Navbar = () => {
                                 </span>
                             </span>
                         </Link>
-                    </div>
-                    <ul className={styles.links}>
+                    </motion.div>
+                    <motion.ul className={styles.links} >
                         <li>
                             <Link href="/">
                                 Home
@@ -45,8 +68,8 @@ const Navbar = () => {
                         <li>
                             <a href="https://www.linkedin.com/in/gauravk9870/" target='_blank'>Contact</a>
                         </li>
-                    </ul>
-                    <ul className={styles.social}>
+                    </motion.ul>
+                    <motion.ul className={styles.social} >
                         <li>
                             <a href="https://github.com/Gauravk9870" target='_blank'>
                                 <AiFillGithub />
@@ -62,14 +85,14 @@ const Navbar = () => {
                                 <AiOutlineInstagram />
                             </a>
                         </li>
-                    </ul>
+                    </motion.ul>
                     <div className={`${styles['menu-btn']} ${isOpen ? styles.animate : ""}`} onClick={() => setIsOpen(!isOpen)}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </div>
-            </nav >
+                </motion.div>
+            </motion.nav >
             {
                 isOpen &&
                 <div className={styles.mobile}>

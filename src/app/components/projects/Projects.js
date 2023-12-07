@@ -4,12 +4,25 @@ import React from 'react'
 import styles from "./Projects.module.scss"
 import Image from 'next/image'
 import { projects } from '@/app/utils/data'
+import useOpacityAnimation from '@/app/hooks/useOpacityAnimation'
+import { motion } from 'framer-motion'
+import useSlideRightToLeftAnimation from '@/app/hooks/useSlideRightToLeftAnimation'
+
 
 const Projects = () => {
     const featuredProjects = projects.filter((project) => project.category === 'recent' || project.category === 'featured')
+    // const numberOfProjects = featuredProjects.length;
+
+    // const { ref: opacityRef, animation: opacityAnimation, animationVariants: opacityVariants } = useOpacityAnimation()
+
+    // const { refs: projectImgRef, animation: projectImgAnimation, animationVariants: projectAnimationVariants, inView } = useSlideRightToLeftAnimation(numberOfProjects);
+
+    // console.log("Refs : ", projectImgRef);
+
+
     return (
         <div className={styles['projects']}>
-            <div className={styles.container}>
+            <motion.div className={styles.container} >
                 <div className={styles['titles']}>
                     <h3>Some Things
                         I’ve Built</h3>
@@ -18,8 +31,8 @@ const Projects = () => {
 
                 <div className={styles.content}>
                     {
-                        featuredProjects.map((project) => (
-                            <div className={styles.project} key={project.id} id={project.category}>
+                        featuredProjects.map((project, index) => (
+                            <div className={styles.project} key={project.id} id={project.category} >
                                 <div className={styles.top}>
                                     <div className={styles.left}>
                                         <span className={styles.category} >
@@ -59,12 +72,12 @@ const Projects = () => {
                                             )}
                                         </div>
                                     </div>
-                                    <div className={styles.right}>
+                                    <motion.div className={styles.right} >
                                         <div className={styles[`image-container`]}>
                                             <Image src={project.laptopImg} fill="true" className={styles.image} alt={project.laptopImg} />
 
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 </div>
                                 <div className={styles.bottom}>
                                     <div className={styles.titles}>
@@ -81,7 +94,7 @@ const Projects = () => {
                     }
 
                 </div>
-            </div>
+            </motion.div>
         </div >
     )
 }

@@ -1,27 +1,22 @@
-import React from 'react'
+"use client"
 import styles from './skills.module.scss'
 
 import Image from 'next/image'
+import { motion } from 'framer-motion';
+import useOpacityAnimation from '@/app/hooks/useOpacityAnimation';
+
 
 const Skills = () => {
+    const { ref, animation, animationVariants } = useOpacityAnimation();
+
     return (
-        <div className={styles.skills} id='skills'>
-            <div className={styles.container}>
+        <motion.div className={styles.skills} id='skills' >
+            <motion.div className={styles.container} ref={ref} variants={animationVariants} initial="hidden" animate={animation}>
                 <div className={styles['titles']}>
                     <h3>Why Choose me</h3>
                     <h2>A Palette of Skills</h2>
                 </div>
                 <ul className={styles['skills-list']}>
-                    {/* <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/html.svg' fill className={styles.image} alt='html' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/css.svg' fill className={styles.image} alt='css' />
-                        </div>
-                    </li> */}
                     <li>
                         <div className={styles['image-container']}>
                             <Image src='/skills/js.svg' fill className={styles.image} alt='js' />
@@ -74,8 +69,8 @@ const Skills = () => {
                         </div>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     )
 }
 

@@ -1,10 +1,14 @@
-import React from 'react'
-import styles from './experience.module.scss'
-const Experience = () => {
+"use client"
 
+import useOpacityAnimation from '@/app/hooks/useOpacityAnimation'
+import styles from './experience.module.scss'
+import { motion } from 'framer-motion'
+
+const Experience = () => {
+    const { ref, animation, animationVariants } = useOpacityAnimation()
 
     return (
-        <div className={styles.experience}>
+        <motion.div className={styles.experience} ref={ref} initial="hidden" variants={animationVariants} animate={animation}>
             <div className={styles.container}>
                 <div className={styles['titles']}>
                     <h3>My Qualification</h3>
@@ -14,8 +18,8 @@ const Experience = () => {
                     <div className={styles.current} id='experience'>
                         <div className={styles.time}>
                             <h4>Experience</h4>
-                            <h2>Web Developer Intern</h2>
-                            <h3>Trippy Bug</h3>
+                            <h2>Full Stack Developer</h2>
+                            <h3>Underpin Services Pvt. Ltd</h3>
                         </div>
                         <span className={styles.year}>July 2023 - Present</span>
                         <span className={styles.dot}></span>
@@ -86,7 +90,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
