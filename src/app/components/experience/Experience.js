@@ -19,7 +19,7 @@ const Experience = () => {
                         <div className={styles.time}>
                             <h4>Experience</h4>
                             <h2>Full Stack Developer</h2>
-                            <h3>Underpin Services Pvt. Ltd</h3>
+                            <h3>Underpin Services</h3>
                         </div>
                         <span className={styles.year}>July 2023 - Present</span>
                         <span className={styles.dot}></span>
