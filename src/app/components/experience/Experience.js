@@ -21,7 +21,7 @@ const Experience = () => {
                             <h2>Full Stack Developer</h2>
                             <h3>Underpin Services</h3>
                         </div>
-                        <span className={styles.year}>July 2023 - Present</span>
+                        <span className={styles.year}>June 2023 - Present</span>
                         <span className={styles.dot}></span>
                     </div>
 
@@ -30,7 +30,7 @@ const Experience = () => {
                             <div className={styles.time}>
                             </div>
                             <div className={styles.time}>
-                                <span className={styles.year}>Jan 2023 - July 2023</span>
+                                <span className={styles.year}>Jan 2023 - May 2023</span>
                                 <span className={styles.dot}></span>
                             </div>
                             <div className={styles.time}>
