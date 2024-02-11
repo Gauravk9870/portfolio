@@ -7,37 +7,18 @@ import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai"
 import { FaLinkedinIn } from "react-icons/fa"
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import useResponsiveAnimation from '@/app/hooks/useResponsiveAnimation';
-
-
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
 
-    const initialVariants = {
-        navbar: {
-            y: '-100%'
-        },
 
-    };
-
-    const endVariants = {
-        navbar: {
-            y: 0
-        }
-
-    }
-
-    const navbarAnimation = useResponsiveAnimation(initialVariants.navbar, endVariants.navbar);
 
     return (
         <>
             <motion.nav
                 className={styles.navbar}
-                {...navbarAnimation}
-                
             >
                 <motion.div className={styles.container}>
                     <motion.div className={styles.logo}>

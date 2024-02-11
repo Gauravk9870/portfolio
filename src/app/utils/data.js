@@ -1,6 +1,28 @@
 export const projects = [
     {
         id: 1,
+        name: " Dingding - Online casino website : Prototype",
+        techology: ["React.js", "SCSS", "CSS"],
+        category: "recent",
+        desc: [
+            "Dingding is a prototype website that showcases various online casino games. The website is designed to be user-friendly, responsive, and engaging, with high-quality graphics and animations.",
+            "Integrated with external APIs to fetch game data and results.",
+            "Collaborated with a game development team to create the website prototype.",
+            "Took responsibility for frontend implementation, using skills in web development and design.",
+            "Ensured the website’s compatibility with different browsers and devices."
+        ],
+        links: [
+            {
+                id: 1,
+                name: "preview",
+                link: "https://dingding-game.vercel.app/"
+            }
+        ],
+        laptopImg: "/featured/laptop/dingding.png",
+        mobileImgs: ["/featured/mobile/dingding.png"]
+    },
+    {
+        id: 2,
         name: "Tracknfly - Website",
         techology: ["React.js", "Node.js", "Express", "CSS", "SCSS"],
         category: "recent",
@@ -21,7 +43,7 @@ export const projects = [
         mobileImgs: ["/featured/mobile/tracknfly.png"]
     },
     {
-        id: 2,
+        id: 3,
         name: "True AdBlocker - Website",
         techology: ["Next.js", "CSS", "SCSS"],
         category: "featured",
@@ -43,7 +65,7 @@ export const projects = [
 
     },
     {
-        id: 3,
+        id: 4,
         name: "Underpin Games",
         techology: ["React.js", "CSS", "SCSS"],
         category: "misc",
@@ -61,7 +83,7 @@ export const projects = [
 
     },
     {
-        id: 4,
+        id: 5,
         name: "Watch OTT Party - Website",
         techology: ["React.js", "CSS", "SCSS"],
         category: "misc",
@@ -83,7 +105,7 @@ export const projects = [
 
     },
     {
-        id: 5,
+        id: 6,
         name: "Youtube AdBlocker - Website",
         techology: ["Next.js", "CSS", "SCSS"],
         category: "misc",
@@ -106,7 +128,7 @@ export const projects = [
     },
 
     {
-        id: 6,
+        id: 7,
         name: "Tripling - Booking website",
         techology: ["React.js", "Node.js", "Express", "MongoDb", "SCSS", "CSS"],
         category: "misc",
@@ -127,7 +149,7 @@ export const projects = [
 
     },
     {
-        id: 7,
+        id: 8,
         name: "Banking Website",
         techology: ["React.js", "Firebase", "CSS", "SCSS"],
         category: "misc",
@@ -152,7 +174,7 @@ export const projects = [
 
     },
     {
-        id: 8,
+        id: 9,
         name: "Exercise Guiding Website",
         techology: ["HTML5", "CSS", "JavaScript"],
         category: "misc",
@@ -173,7 +195,7 @@ export const projects = [
 
     },
     {
-        id: 9,
+        id: 10,
         name: "Jabber - Chatting website",
         techology: ["HTML5", "CSS", "JavaScript"],
         category: "misc",
@@ -197,7 +219,7 @@ export const projects = [
         mobileImgs: []
     },
     {
-        id: 10,
+        id: 11,
         name: "Meal Monkey",
         techology: ["NEXTJS", "CSS", "SCSS"],
         category: "misc",

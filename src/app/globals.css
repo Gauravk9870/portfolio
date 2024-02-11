@@ -14,7 +14,7 @@ html {
 
 body {
   background: rgb(0, 212, 255);
-  background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(0, 74, 173, 1) 0%, rgba(16, 9, 25, 1) 100%);
+  background: radial-gradient(circle, rgba(0, 212, 255, 1) 0%, rgba(0, 74, 173, 1) 0%, rgb(47, 0, 108) 100%);
   scroll-behavior: smooth;
 }
 
