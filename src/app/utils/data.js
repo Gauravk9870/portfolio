@@ -1,26 +1,26 @@
 export const projects = [
-    {
-        id: 1,
-        name: " Dingding - Online casino website : Prototype",
-        techology: ["React.js", "SCSS", "CSS"],
-        category: "recent",
-        desc: [
-            "Dingding is a prototype website that showcases various online casino games. The website is designed to be user-friendly, responsive, and engaging, with high-quality graphics and animations.",
-            "Integrated with external APIs to fetch game data and results.",
-            "Collaborated with a game development team to create the website prototype.",
-            "Took responsibility for frontend implementation, using skills in web development and design.",
-            "Ensured the website’s compatibility with different browsers and devices."
-        ],
-        links: [
-            {
-                id: 1,
-                name: "preview",
-                link: "https://dingding-game.vercel.app/"
-            }
-        ],
-        laptopImg: "/featured/laptop/dingding.png",
-        mobileImgs: ["/featured/mobile/dingding.png"]
-    },
+    // {
+    //     id: 1,
+    //     name: " Dingding - Online casino website : Prototype",
+    //     techology: ["React.js", "SCSS", "CSS"],
+    //     category: "recent",
+    //     desc: [
+    //         "Dingding is a prototype website that showcases various online casino games. The website is designed to be user-friendly, responsive, and engaging, with high-quality graphics and animations.",
+    //         "Integrated with external APIs to fetch game data and results.",
+    //         "Collaborated with a game development team to create the website prototype.",
+    //         "Took responsibility for frontend implementation, using skills in web development and design.",
+    //         "Ensured the website’s compatibility with different browsers and devices."
+    //     ],
+    //     links: [
+    //         {
+    //             id: 1,
+    //             name: "preview",
+    //             link: "https://dingding-game.vercel.app/"
+    //         }
+    //     ],
+    //     laptopImg: "/featured/laptop/dingding.png",
+    //     mobileImgs: ["/featured/mobile/dingding.png"]
+    // },
     {
         id: 2,
         name: "Tracknfly - Website",

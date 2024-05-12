@@ -15,7 +15,9 @@ $large: 1024px;
 }
 
 .skills {
-  padding: 10rem 0rem;
+  // padding: 10rem 0rem;
+  width: 100%;
+  // background-color: #161b22;
   .container {
     position: relative;
     height: 100%;
@@ -23,6 +25,7 @@ $large: 1024px;
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    // border: 1px solid red;
 
     @include for-greater-than-medium() {
       padding: 4rem 2rem;
@@ -52,11 +55,6 @@ $large: 1024px;
 
     .skills-list {
       display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-
-      gap: 2rem;
 
       li {
         position: relative;

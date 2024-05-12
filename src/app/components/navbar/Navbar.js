@@ -6,22 +6,17 @@ import styles from './navbar.module.scss';
 import { AiFillGithub, AiOutlineInstagram } from "react-icons/ai"
 import { FaLinkedinIn } from "react-icons/fa"
 import Link from 'next/link';
-import { motion } from 'framer-motion';
 
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-
-
-
     return (
         <>
-            <motion.nav
+            <nav
                 className={styles.navbar}
             >
-                <motion.div className={styles.container}>
-                    <motion.div className={styles.logo}>
+                <div className={styles.container}>
+                    <div className={styles.logo}>
                         <Link href="/">
                             <span>
                                 Gaurav
@@ -30,8 +25,8 @@ const Navbar = () => {
                                 </span>
                             </span>
                         </Link>
-                    </motion.div>
-                    <motion.ul className={styles.links} >
+                    </div>
+                    <ul className={styles.links} >
                         <li>
                             <Link href="/">
                                 Home
@@ -49,8 +44,8 @@ const Navbar = () => {
                         <li>
                             <a href="https://www.linkedin.com/in/gauravk9870/" target='_blank'>Contact</a>
                         </li>
-                    </motion.ul>
-                    <motion.ul className={styles.social} >
+                    </ul>
+                    <ul className={styles.social} >
                         <li>
                             <a href="https://github.com/Gauravk9870" target='_blank'>
                                 <AiFillGithub />
@@ -66,14 +61,14 @@ const Navbar = () => {
                                 <AiOutlineInstagram />
                             </a>
                         </li>
-                    </motion.ul>
+                    </ul>
                     <div className={`${styles['menu-btn']} ${isOpen ? styles.animate : ""}`} onClick={() => setIsOpen(!isOpen)}>
                         <span></span>
                         <span></span>
                         <span></span>
                     </div>
-                </motion.div>
-            </motion.nav >
+                </div>
+            </nav >
             {
                 isOpen &&
                 <div className={styles.mobile}>

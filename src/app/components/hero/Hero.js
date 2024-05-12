@@ -5,18 +5,15 @@ import styles from './hero.module.scss'
 import Image from 'next/image'
 import Navbar from '../navbar/Navbar';
 import Link from 'next/link';
-import { motion, useInView } from 'framer-motion';
-import useResponsiveAnimation from '@/app/hooks/useResponsiveAnimation';
-
+import Skills from '../skills/Skills';
 
 const Hero = () => {
 
     return (
         <>
             <div className={styles.main}>
-                <video src="/bg.mp4" autoPlay muted loop></video>
                 <Navbar />
-                <motion.div className={styles.hero} >
+                <div className={styles.hero} >
                     <div className={styles.container}>
                         <div className={styles.content}>
                             <div className={styles.top}>
@@ -58,7 +55,9 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
-                </motion.div >
+                </div >
+                <Skills />
+
             </div>
 
         </>

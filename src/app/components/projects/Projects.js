@@ -4,31 +4,13 @@ import React from 'react'
 import styles from "./Projects.module.scss"
 import Image from 'next/image'
 import { projects } from '@/app/utils/data'
-import useOpacityAnimation from '@/app/hooks/useOpacityAnimation'
-import { motion } from 'framer-motion'
-import useSlideRightToLeftAnimation from '@/app/hooks/useSlideRightToLeftAnimation'
 
 
 const Projects = () => {
     const featuredProjects = projects.filter((project) => project.category === 'recent' || project.category === 'featured')
-    // const numberOfProjects = featuredProjects.length;
-
-    // const { ref: opacityRef, animation: opacityAnimation, animationVariants: opacityVariants } = useOpacityAnimation()
-
-    // const { refs: projectImgRef, animation: projectImgAnimation, animationVariants: projectAnimationVariants, inView } = useSlideRightToLeftAnimation(numberOfProjects);
-
-    // console.log("Refs : ", projectImgRef);
-
-
     return (
         <div className={styles['projects']}>
-            <motion.div className={styles.container} >
-                <div className={styles['titles']}>
-                    <h3>Some Things
-                        I’ve Built</h3>
-                    <h2>Projects</h2>
-                </div>
-
+            <div className={styles.container} >
                 <div className={styles.content}>
                     {
                         featuredProjects.map((project, index) => (
@@ -72,12 +54,12 @@ const Projects = () => {
                                             )}
                                         </div>
                                     </div>
-                                    <motion.div className={styles.right} >
+                                    <div className={styles.right} >
                                         <div className={styles[`image-container`]}>
                                             <Image src={project.laptopImg} fill="true" className={styles.image} alt={project.laptopImg} />
 
                                         </div>
-                                    </motion.div>
+                                    </div>
                                 </div>
                                 <div className={styles.bottom}>
                                     <div className={styles.titles}>
@@ -94,7 +76,7 @@ const Projects = () => {
                     }
 
                 </div>
-            </motion.div>
+            </div>
         </div >
     )
 }

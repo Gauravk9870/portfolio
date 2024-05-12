@@ -1,76 +1,80 @@
 "use client"
 import styles from './skills.module.scss'
-
 import Image from 'next/image'
-import { motion } from 'framer-motion';
-import useOpacityAnimation from '@/app/hooks/useOpacityAnimation';
+import { useState, useEffect } from 'react';
 
+const data = [
+    {
+        id: 1,
+        name: "javascript",
+        icon: "/skills/js.svg"
+    },
+    {
+        id: 2,
+        name: "reactjs",
+        icon: "/skills/react.svg"
+    },
+    {
+        id: 3,
+        name: "nextjs",
+        icon: "/skills/next.svg"
+    },
+    {
+        id: 4,
+        name: "sass",
+        icon: "/skills/sass.svg"
+    },
+    {
+        id: 5,
+        name: "tailwind",
+        icon: "/skills/tailwind.svg"
+    },
+    {
+        id: 6,
+        name: "git",
+        icon: "/skills/git.svg"
+    },
+    {
+        id: 7,
+        name: "node",
+        icon: "/skills/node.svg"
+    },
+    {
+        id: 8,
+        name: "expressjs",
+        icon: "/skills/express.svg"
+    },
+    {
+        id: 9,
+        name: "mongodb",
+        icon: "/skills/mongodb.svg"
+    },
+    {
+        id: 9,
+        name: "firebase",
+        icon: "/skills/firebase.svg"
+    },
+]
 
 const Skills = () => {
-    const { ref, animation, animationVariants } = useOpacityAnimation();
+    const [items, setItems] = useState([...data]); // Clone the items
 
     return (
-        <motion.div className={styles.skills} id='skills' >
-            <motion.div className={styles.container} ref={ref} variants={animationVariants} initial="hidden" animate={animation}>
-                <div className={styles['titles']}>
-                    <h3>Why Choose me</h3>
-                    <h2>A Palette of Skills</h2>
-                </div>
-                <ul className={styles['skills-list']}>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/js.svg' fill className={styles.image} alt='js' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/react.svg' fill className={styles.image} alt='react' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/next.svg' fill className={styles.image} alt='next' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/sass.svg' fill className={styles.image} alt='sass' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/tailwind.svg' fill className={styles.image} alt='tailwind' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/git.svg' fill className={styles.image} alt='git' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/node.svg' fill className={styles.image} alt='node' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/express.svg' fill className={styles.image} alt='express' />
-                        </div>
-                    </li>
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/mongodb.svg' fill className={styles.image} alt='mongodb' />
-                        </div>
-                    </li>
+        <div className={`${styles.skills} items-center justify-center border border-red-950`} id='skills' >
+            <div className={styles.container}>
 
-                    <li>
-                        <div className={styles['image-container']}>
-                            <Image src='/skills/firebase.svg' fill className={styles.image} alt='firebase' />
-                        </div>
-                    </li>
+                <ul className={styles['skills-list']}>
+                    {items.map((item, index) => (
+
+                        <li>
+                            <div className={styles['image-container']}>
+                                <Image src={item.icon} fill className={styles.image} alt={item.name} />
+                            </div>
+                        </li>
+                    ))}
                 </ul>
-            </motion.div>
-        </motion.div>
+            </div>
+        </div>
     )
 }
 

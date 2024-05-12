@@ -1,14 +1,10 @@
 "use client"
-
-import useOpacityAnimation from '@/app/hooks/useOpacityAnimation'
 import styles from './experience.module.scss'
-import { motion } from 'framer-motion'
 
 const Experience = () => {
-    const { ref, animation, animationVariants } = useOpacityAnimation()
 
     return (
-        <motion.div className={styles.experience} ref={ref} initial="hidden" variants={animationVariants} animate={animation}>
+        <div className={styles.experience} >
             <div className={styles.container}>
                 <div className={styles['titles']}>
                     <h3>My Qualification</h3>
@@ -90,7 +86,7 @@ const Experience = () => {
                     </div>
                 </div>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

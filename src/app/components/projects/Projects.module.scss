@@ -30,26 +30,6 @@ $large: 1024px;
       //   padding: 4rem;
     }
 
-    .titles {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      h2 {
-        text-align: center;
-        font-weight: 500;
-        font-size: 5rem;
-      }
-
-      h3 {
-        text-align: center;
-        font-weight: 500;
-        font-size: 1.5rem;
-        color: #fa571f;
-        text-transform: uppercase;
-      }
-    }
 
     .content {
       display: flex;
