@@ -66,7 +66,7 @@ const Skills = () => {
                 <ul className={styles['skills-list']}>
                     {items.map((item, index) => (
 
-                        <li>
+                        <li key={index}>
                             <div className={styles['image-container']}>
                                 <Image src={item.icon} fill className={styles.image} alt={item.name} />
                             </div>
